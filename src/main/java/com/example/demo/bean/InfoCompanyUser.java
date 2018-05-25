@@ -13,7 +13,7 @@ import java.util.Date;
 //@Setter
 public class InfoCompanyUser implements Serializable {
     /**
-     * 企业员工表id
+     * 企业员工表id  123123
      */
     private String id;
 
