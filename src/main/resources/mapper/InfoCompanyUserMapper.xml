@@ -29,12 +29,6 @@
             </foreach>  
     </update>   
 
-    <update id="updateByUsername" parameterType="com.example.demo.bean.InfoCompanyUser">
-        update info_company_user
-        set nickname = NULL ,
-        status = 1,
-        encrypt_status = 0
-        where username = #{username}
-    </update>
+
 
 </mapper>

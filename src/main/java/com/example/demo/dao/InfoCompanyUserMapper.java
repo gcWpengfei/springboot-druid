@@ -11,6 +11,6 @@ public interface InfoCompanyUserMapper {
     
 	int deleteByPrimaryKey(String id);
 	
-    public void updateBatch(List<InfoCompanyUser> list);
+    void updateBatch(List<InfoCompanyUser> list);
 
 }
