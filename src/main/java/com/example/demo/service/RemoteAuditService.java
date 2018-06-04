@@ -38,7 +38,7 @@ public class RemoteAuditService {
         u.setStatus(1);
         list.add(u);
 
-        u = new InfoCompanyUser();
+        /*u = new InfoCompanyUser();
         u.setUsername("68112710001");
         u.setStatus(1);
         list.add(u);
@@ -46,10 +46,10 @@ public class RemoteAuditService {
         u = new InfoCompanyUser();
         u.setUsername("68112710002");
         u.setStatus(1);
-        list.add(u);
+        list.add(u);*/
 
         infoCompanyUserMapper.updateBatch(list);
         
-        int i = 1/0;
+        //int i = 1/0;
     }
 }

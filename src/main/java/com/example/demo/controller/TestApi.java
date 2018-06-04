@@ -1,6 +1,8 @@
 package com.example.demo.controller;
 
 
+import com.example.demo.util.JsonUtil;
+import com.example.demo.util.ResponseObject;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -41,7 +43,7 @@ public class TestApi {
     public String test(){
         remoteAuditService.test();
         LOG.info("111111");
-        return "111";
+        return JsonUtil.returnObjectToJson(ResponseObject.newSuccessResponseObject("hello world"));
     }
 
 }
